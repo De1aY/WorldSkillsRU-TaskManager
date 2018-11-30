@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/users', "Models\UserController@getUsers")->middleware('session');
+
+Route::get('/tasks', "Models\TaskController@getTasks")->middleware('session');
+Route::put('/tasks', "Models\TaskController@addTask")->middleware('session');
+
+Route::get('/processes', "Models\ProcessController@getProcesses")->middleware('session');
+
+Route::post('/login', 'AuthorizationController@login');
+Route::post('/session', 'AuthorizationController@checkSessionID')->middleware('session');
