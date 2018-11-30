@@ -26356,7 +26356,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }
             this.$snotify.async('Запрос выполняется', 'Подождите...', function () {
                 return new Promise(function (resolve, reject) {
-                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('http://127.0.0.1/api/login', {
+                    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('http://165.227.166.148/api/login', {
                         login: _this.login,
                         password: _this.password
                     }).then(function (resp) {
@@ -27678,13 +27678,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }));
         },
         getUsers: function getUsers() {
-            return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('http://127.0.0.1/api/users');
+            return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('http://165.227.166.148/api/users');
         },
         getTasks: function getTasks() {
-            return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('http://127.0.0.1/api/tasks');
+            return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('http://165.227.166.148/api/tasks');
         },
         getProcesses: function getProcesses() {
-            return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('http://127.0.0.1/api/processes');
+            return __WEBPACK_IMPORTED_MODULE_4_axios___default.a.get('http://165.227.166.148/api/processes');
         },
         validateResponseData: function validateResponseData(resp) {
             if (resp.data.code === 402 || resp.data.code === 403) {

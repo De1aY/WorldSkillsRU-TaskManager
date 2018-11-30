@@ -113,15 +113,15 @@
             },
 
             getUsers () {
-              return axios.get('http://127.0.0.1/api/users')
+              return axios.get('http://165.227.166.148/api/users')
             },
 
             getTasks () {
-                return axios.get('http://127.0.0.1/api/tasks')
+                return axios.get('http://165.227.166.148/api/tasks')
             },
 
             getProcesses () {
-                return axios.get('http://127.0.0.1/api/processes')
+                return axios.get('http://165.227.166.148/api/processes')
             },
 
             validateResponseData (resp) {

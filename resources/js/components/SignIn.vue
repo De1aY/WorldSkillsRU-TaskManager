@@ -41,7 +41,7 @@
                   'Запрос выполняется',
                   'Подождите...',
                   () => new Promise((resolve, reject) => {
-                      axios.post('http://127.0.0.1/api/login', {
+                      axios.post('http://165.227.166.148/api/login', {
                           login: this.login,
                           password: this.password
                       }).then(resp => {
